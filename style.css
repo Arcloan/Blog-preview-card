@@ -1,36 +1,72 @@
+:root {
+    --grey: hsl(0, 0%, 50%);
+    --yellow: hsl(47, 88%, 63%);
+    --black: hsl(0, 0%, 7%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: hsl(47, 88%, 63%);
-    font-family: sans-serif;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    height: 100vb;
+    justify-content: center;
+    align-items: center;
+    font-family: "Figtree", sans-serif;
 }
 
-.subheading {
-    font-weight: bold;
-    display: inline-block;
-}
-
-h1, footer p {
-    font-weight: bold;
+.container img {
+    width: 100%;
+    border-radius: 1em;
 }
 
 .container {
-    background-color: white;
-    block-size: 55vb;
-    inline-size: 48vi;
-    display: flex;
-    flex-flow: column nowrap;
-    border-radius: 1em;
-    box-shadow: 1em 1em 0px black;
+    width: 45vi;
+    background-color: var(--white);
     padding: 1em;
-}
-
-.container svg {
-    align-self: center;
-    display:block;
+    border: 1px solid var(--black);
+    box-shadow: 1em 1em 0px var(--black);
     border-radius: 1em;
+
 }
 
-footer img {
-    float:left;
-    margin: 0.5em;
+p {
+    font-size: 0.8em;
+    line-height: 1.6;
+}
 
+.gray-color-text {
+    color: var(--grey);
+}
+
+.profile img {
+    height: 2em;
+    width: 2em;
+    margin-inline-end: 0.6em;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.subheading {
+    width: 5em;
+    font-weight: bold;
+    background-color: var(--yellow);
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+h3:hover {
+    color: var(--yellow);
+    cursor: pointer;
 }
