@@ -1,0 +1,36 @@
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: sans-serif;
+}
+
+.subheading {
+    font-weight: bold;
+    display: inline-block;
+}
+
+h1, footer p {
+    font-weight: bold;
+}
+
+.container {
+    background-color: white;
+    block-size: 55vb;
+    inline-size: 48vi;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 1em;
+    box-shadow: 1em 1em 0px black;
+    padding: 1em;
+}
+
+.container svg {
+    align-self: center;
+    display:block;
+    border-radius: 1em;
+}
+
+footer img {
+    float:left;
+    margin: 0.5em;
+
+}
